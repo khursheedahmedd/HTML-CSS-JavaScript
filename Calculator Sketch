@@ -1,0 +1,251 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<link href="assets/icon.jpeg" rel="short icon"/>
+	<style>
+		/*Calculator styling*/
+		#body{
+            align-content: center;
+			background-color:rgb(57, 54, 54);
+			border:rgb(18, 17, 17) 3px solid;
+			width:29%;
+			height:65%;
+			margin-left: auto;
+			margin-right: auto; 
+			border-style: ridge;
+		    background-origin: inherit;
+			box-shadow: 2px 4px black;
+			border-radius: 4px;
+
+		}
+		#screen{
+			background-color:rgb(254, 251, 255);		
+			padding: 20px 100px 0px 2px;
+			font-size: 30px;
+			flood-color: rgb(20, 20, 20);
+			margin: 2.7px;
+			margin-top: 5px;
+			border-radius: 7px;
+			border-style: ridge;
+			box-shadow: 2px 2px rgba(78, 2, 82, 0.2);
+		}
+
+	
+		#d1{
+			background-color: #e7b1ee;
+            color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 55px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(249, 92, 202, 0.637);
+			padding-left: 24.7px;
+			padding-right: 16.6px;
+			border-radius: 9px;
+			
+		
+		}
+		#d2{
+            background-color:#f3d091;
+            color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 55px;
+			font-family: italic;
+            box-shadow: 2px 4px #e8a425;
+			padding-left: 27.7px;
+			padding-right: 12.6px;
+			border-radius: 9px;
+            
+		
+		}
+		#d3{
+			background-color:rgb(150, 217, 244);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 5px;
+            font-size: 35px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(4, 148, 88, 0.898);
+			padding-left: 7.7px;
+			padding-right: 31.6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 9px;
+		}	
+		#d4{
+			background-color:#a3f8e8;
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 60px;
+			font-family: italic;
+			box-shadow: 2px 4px #03fcca;
+			padding-left: 25.7px;
+			padding-right: 14.6px;
+			border-radius: 9px;
+
+		}
+		#d5{
+			background-color: rgba(174, 174, 246, 0.877);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 60px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(36, 3, 223, 0.563);
+			padding-left: 25.7px;
+			padding-right: 14.6px;
+			border-radius: 9px;
+		}
+		#d6{
+			background-color: rgb(150, 247, 169);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 60px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(6, 191, 9, 0.697);
+			padding-left: 25.7px;
+			padding-right: 14.6px;
+			border-radius: 9px;
+		}
+		#d7{
+			background-color: rgb(234, 223, 164);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 45px;
+            float: left;
+            margin: 5px;
+            font-size: 60px;
+			font-family: italic;
+            box-shadow: 2px 4px rgb(203, 199, 3);
+			padding-left: 25.7px;
+			padding-right: 14.6px;
+			padding-bottom: 14px;
+			border-radius: 9px;
+		}
+		#d8{
+			background-color:rgb(156, 216, 240);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 60px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(5, 142, 240, 0.898);
+			padding-left: 25.7px;
+			padding-right: 14.6px;
+			border-radius: 9px;
+		}
+		#d9
+		{
+			background-color:rgb(222, 247, 158);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 60px;
+            float: left;
+            margin: 5px;
+            font-size: 50px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(120, 156, 3, 0.898);
+			padding-left: 25.7px;
+			padding-right: 17.6px;
+			border-radius: 9px;
+		}
+		#d10{
+			background-color:rgba(250, 185, 185, 0.876);		
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 5px;
+            font-size: 35px;
+			font-family: italic;
+			box-shadow: 1px 4px rgba(255, 0, 0, 0.947);
+			padding-left: 9.7px;
+			padding-right: 30.6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 9px;
+		}
+		#d11{
+			background-color:rgb(245, 226, 160);
+			color: white;
+            background-color: 10px;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 5px;
+            font-size: 35px;
+			font-family: italic;
+            box-shadow: 2px 4px rgba(169, 86, 3, 0.898);
+			padding-left: 7.7px;
+			padding-right: 31.6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 9px;
+		}
+		#clr{
+			clear:both;
+		}
+	
+	
+	</style>
+</head>
+<body>
+	
+	<div id="body">
+		<div id="screen">0</div>
+		<div id="d10">ON</div>
+		<div id="d11">OFF</div>
+		<div id="d3">DEL</div>
+		<div id="d9">%</div>
+		<div id="d1">1</div>
+		<div id="d1">2</div>
+		<div id="d1">3</div>
+		<div id="d4">÷</div>
+		<div id="d1">4</div>
+		<div id="d1">5</div>
+		<div id="d1">6</div>
+		<div id="d5">×</div>
+		<div id="d1">7</div>
+        <div id="d1">8</div>
+		<div id="d1">9</div>
+		<div id="d6">+</div>
+		<div id="d1">0</div>
+		<div id="d2">•</div>
+		<div id="d8">=</div>
+		<div id="d7">–</div>
+	   
+		
+		
+		
+	</div>
+	
+	
+</body>
+</html>
